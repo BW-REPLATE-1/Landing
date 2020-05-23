@@ -184,6 +184,9 @@ footer .footNav a {
   color: #7d5a5a;
   font-size: 1.2rem;
 }
+.footNav a:hover {
+  opacity: 50%;
+}
 .aboutSection {
   position: relative;
 }
@@ -222,6 +225,10 @@ footer .footNav a {
   margin-top: 180px;
   font-weight: bold;
 }
+.button:hover {
+  opacity: 50%;
+  color: black;
+}
 .foodFacts {
   text-align: start;
   margin-left: 100px;
@@ -250,4 +257,7 @@ footer .footNav a {
   padding-bottom: 10%;
   top: 10%;
   box-sizing: border-box;
+}
+.links:hover {
+  opacity: 50%;
 }
