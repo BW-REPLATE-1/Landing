@@ -41,7 +41,27 @@
         font-family: @fontStlye;
     }
 } 
-
+@media @mobile {
+    .donate {
+   flex-direction: column;
+        .foodImg {
+       max-width: 100%;}
+            .button{
+                margin-top: 15px;
+                margin-bottom: 15px;
+                padding: 15px 25px;
+                font-size: 24px;
+                text-align: center;
+                cursor: pointer;
+                outline: none;
+                color: @fontColor;
+                background-color: @boldColor;
+                border: none;
+                border-radius: 15px;
+                box-shadow: 0 9px #999;
+            }
+    }
+}
 .button:hover{
     opacity: 50%;
     color:black;
