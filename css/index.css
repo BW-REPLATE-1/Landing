@@ -130,10 +130,18 @@ body {
   background: #faf2f2;
 }
 .fullBody {
-  max-width: 1295px;
+  max-width: 1200px;
   width: 100%;
-  margin: 0 auto;
+  margin: auto;
   background-color: #f1d1d1;
+}
+.fullBody {
+  position: relative;
+  background: #f1d1d1;
+  border-radius: 40px;
+  transition: all 3.5s;
+  border-bottom: 3px solid #7d5a5a;
+  border-right: 4px solid #7d5a5a;
 }
 h1 {
   font-size: 6rem;
@@ -155,17 +163,37 @@ h1 {
   font-size: 1.4rem;
   margin: 10px;
 }
-.aboutSection {
-  display: flex;
-  justify-content: center;
+footer {
+  padding: 50px;
 }
-.aboutSection p {
+footer .appLogo {
+  max-width: 200px;
+}
+footer .footNav {
+  display: flex;
+  justify-content: space-around;
+}
+footer .footNav a {
+  text-decoration: none;
+  margin-top: 30px;
+  color: #7d5a5a;
+  font-size: 1.2rem;
+}
+.aboutSection {
+  position: relative;
+}
+.aboutSection h2 {
   line-height: 1;
   color: #7d5a5a;
-  padding-top: 60px;
-  margin-right: 10px;
+  margin: 5%;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.aboutSection p {
   font-size: 1.3rem;
-  font-weight: bold;
+  text-align: center;
+  color: #7d5a5a;
+  margin: 5%;
 }
 .donate {
   margin: 20px;
@@ -175,7 +203,7 @@ h1 {
 }
 .donate .foodImg {
   max-width: 50%;
-  border-radius: 10px;
+  border-radius: 30px;
   opacity: 90%;
 }
 .donate .button {
@@ -185,13 +213,36 @@ h1 {
   font-size: 2rem;
   margin-bottom: 180px;
   padding: 10px;
-  color: #7d5a5a;
+  color: #13a591;
   margin-top: 180px;
   font-weight: bold;
 }
-.appLogo {
-  max-width: 200px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.foodFacts {
+  text-align: start;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.foodFacts .list {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+}
+.foodFacts .list .listP {
+  text-align: center;
+  padding: 10px;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+.foodFacts .list .listP .links {
+  font-style: normal;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #13a591;
+  text-align: center;
+  position: relative;
+  bottom: 10px;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  top: 10%;
+  box-sizing: border-box;
 }
