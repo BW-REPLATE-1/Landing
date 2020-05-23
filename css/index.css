@@ -126,6 +126,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+html {
+  font-size: 62.5%;
+}
 body {
   background: #faf2f2;
 }
@@ -135,16 +138,16 @@ body {
   margin: auto;
   background-color: #f1d1d1;
   position: relative;
-  background: #f1d1d1;
   border-radius: 40px;
   border-bottom: 3px solid #7d5a5a;
   border-right: 4px solid #7d5a5a;
 }
 h1 {
-  font-size: 6rem;
+  font-size: 10rem;
   text-align: center;
   color: #13a591;
-  font-weight: bold;
+  font-family: 'Oxygen', sans-serif;
+  padding: 5%;
 }
 .navBar {
   margin: 20px;
@@ -156,11 +159,11 @@ h1 {
 .navBar nav .navBtn {
   color: #7d5a5a;
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 2rem;
   margin: 10px;
 }
 .navBtn:hover {
-  opacity: 40%;
+  opacity: 50%;
   transition: all 1s;
   border-right: 2px solid black;
   border-left: 2px solid black;
@@ -169,7 +172,7 @@ h1 {
   border-radius: 10px;
 }
 footer {
-  padding: 50px;
+  padding: 10%;
 }
 footer .appLogo {
   max-width: 200px;
@@ -182,32 +185,36 @@ footer .footNav a {
   text-decoration: none;
   margin-top: 30px;
   color: #7d5a5a;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 .footNav a:hover {
   opacity: 50%;
 }
 .aboutSection {
   position: relative;
+  padding: 2%;
 }
 .aboutSection h2 {
   line-height: 1;
   color: #7d5a5a;
   margin: 5%;
-  font-size: 1.6rem;
+  font-size: 2rem;
   text-align: center;
+  font-family: 'Oxygen', sans-serif;
 }
 .aboutSection p {
-  font-size: 1.3rem;
+  font-size: 2rem;
   text-align: center;
   color: #7d5a5a;
   margin: 5%;
+  font-family: 'Oxygen', sans-serif;
 }
 .donate {
   margin: 20px;
   display: flex;
   justify-content: space-evenly;
   flex-direction: row-reverse;
+  padding: 2%;
 }
 .donate .foodImg {
   max-width: 50%;
@@ -218,12 +225,13 @@ footer .footNav a {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 180px;
   padding: 10px;
   color: #13a591;
   margin-top: 180px;
   font-weight: bold;
+  font-family: 'Oxygen', sans-serif;
 }
 .button:hover {
   opacity: 50%;
@@ -233,29 +241,28 @@ footer .footNav a {
   text-align: start;
   margin-left: 100px;
   margin-right: 100px;
+  padding: 2%;
 }
 .foodFacts .list {
   display: flex;
-  justify-content: center;
-  padding: 5%;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .foodFacts .list .listP {
   text-align: center;
   padding: 10px;
   font-style: italic;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
+  line-height: 2;
+  font-family: 'Oxygen', sans-serif;
 }
 .foodFacts .list .listP .links {
   font-style: normal;
-  font-size: 2rem;
+  font-size: 3rem;
   text-decoration: none;
+  font-weight: bold;
   color: #13a591;
-  text-align: center;
   position: relative;
-  bottom: 10px;
-  padding-top: 10%;
-  padding-bottom: 10%;
-  top: 10%;
   box-sizing: border-box;
 }
 .links:hover {
