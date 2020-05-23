@@ -149,6 +149,13 @@ h1 {
   font-family: 'Oxygen', sans-serif;
   padding: 5%;
 }
+@media (max-width: 500px) {
+  h1 {
+    font-size: 6rem;
+    padding: 2%;
+    font-weight: bold;
+  }
+}
 .navBar {
   margin: 20px;
 }
@@ -161,6 +168,54 @@ h1 {
   text-decoration: none;
   font-size: 2rem;
   margin: 10px;
+}
+@media (max-width: 500px) {
+  .navBar {
+    align-items: center;
+  }
+  .navBar nav {
+    display: none;
+  }
+  #active {
+    color: #7d5a5a;
+    padding: 16px;
+    font-size: 5rem;
+    border: none;
+    cursor: pointer;
+    margin-left: 50%;
+    margin-right: 50%;
+  }
+  .navBar {
+    position: relative;
+    display: inline-block;
+  }
+  .downBar {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-left: 50%;
+    margin-right: 50%;
+  }
+  .downBar a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    margin-left: 50%;
+    margin-right: 50%;
+  }
+  #active:hover {
+    color: #13a591;
+  }
+  .downBar a:hover {
+    background-color: #13a591;
+  }
+  .navBar:hover .downBar {
+    display: block;
+  }
 }
 .navBtn:hover {
   opacity: 50%;
