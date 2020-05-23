@@ -134,12 +134,9 @@ body {
   width: 100%;
   margin: auto;
   background-color: #f1d1d1;
-}
-.fullBody {
   position: relative;
   background: #f1d1d1;
   border-radius: 40px;
-  transition: all 3.5s;
   border-bottom: 3px solid #7d5a5a;
   border-right: 4px solid #7d5a5a;
 }
@@ -151,17 +148,25 @@ h1 {
 }
 .navBar {
   margin: 20px;
-  background-color: #f1d1d1;
 }
 .navBar nav {
   display: flex;
   justify-content: space-around;
 }
-.navBar nav a {
+.navBar nav .navBtn {
   color: #7d5a5a;
   text-decoration: none;
   font-size: 1.4rem;
   margin: 10px;
+}
+.navBtn:hover {
+  opacity: 40%;
+  transition: all 1s;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 10px;
 }
 footer {
   padding: 50px;
