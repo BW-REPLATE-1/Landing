@@ -1,46 +1,81 @@
 .aboutSection {
-    display:flex;
-    justify-content: center;
-    p{
+    position: relative;
+    padding:2%;
+    h2{
         line-height: 1;
-        color: #7d5a5a;
-        padding-top: 60px;
-        margin-right: 10px;
-        font-size: 1.3rem;
-        font-weight: bold;
+        color: @fontColor;
+        margin: 5%;
+        font-size: @fontSize;
+        text-align: center;
+        font-family: @fontStlye;
+    }
+    p {
+        font-size: @fontSize;
+        text-align: center;
+        color: @fontColor;
+        margin: 5%;
+        font-family: @fontStlye;
     }
 }
 
 
 .donate {
     margin: 20px;
-    display: flex;
-    justify-content: space-evenly;
+    .flexBox(space-evenly);
     flex-direction: row-reverse;
+    padding:2%;
     .foodImg {
         max-width: 50%;
-        border-radius: 10px;
-        opacity: 90%;
-    }
+        border-radius: 30px;
+        opacity: 90%; }
     .button {
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 2rem;
+        font-size: 3rem;
         margin-bottom: 180px;
         padding: 10px;
-        color: #7d5a5a;
+        color: @boldColor;
         margin-top: 180px;
         font-weight: bold;
+        font-family: @fontStlye;
     }
+} 
+
+.button:hover{
+    opacity: 50%;
+    color:black;
 }
 
 
+.foodFacts{
+    text-align: start;
+    margin-left: 100px;
+    margin-right:100px;
+    padding:2%;
+    .list {
+        .flexBox(space-evenly);
+        align-items: center;
+        .listP {
+            text-align: center;
+            padding:10px;
+            font-style: italic;
+            font-size: 1.5rem;
+            line-height: 2;
+            font-family: @fontStlye;
+            .links {
+                font-style: normal;
+                font-size: 3rem;
+                text-decoration: none;
+                font-weight: bold;
+                color: @boldColor;
+                position: relative;
+                box-sizing: border-box;
+            }
+        }   
+    }
+}
 
-
-.appLogo {
-    max-width: 200px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.links:hover{
+    opacity: @hover;
 }

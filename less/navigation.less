@@ -1,21 +1,31 @@
 h1 {
-    font-size: 6rem;
+    font-size: 10rem;
     text-align: center;
-    color: #13a591;
-    font-weight: bold;}
+    color: @boldColor;
+    font-family: @fontStlye;
+    padding: 5%;
+}
 
 .navBar {
     margin: 20px;
-    background-color: #f1d1d1;
     nav {
-display: flex;
-justify-content: space-around;
-      
-      a {
-color:#7d5a5a;
-text-decoration: none;
-font-size: 1.4rem;
-margin: 10px;
+      display: flex;
+      justify-content: space-around;  
+      .navBtn {
+        color:@fontColor;
+        text-decoration: none;
+        font-size: @fontSize;
+        margin: 10px;
+        }
+    }
 }
-} 
-}
+
+.navBtn:hover {
+        opacity: @hover;
+        transition:all 1s;
+        border-right:2px solid black;
+        border-left: 2px solid black;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 10px;
+    }

@@ -126,72 +126,145 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+html {
+  font-size: 62.5%;
+}
 body {
   background: #faf2f2;
 }
 .fullBody {
-  max-width: 1295px;
+  max-width: 1200px;
   width: 100%;
-  margin: 0 auto;
+  margin: auto;
   background-color: #f1d1d1;
+  position: relative;
+  border-radius: 40px;
+  border-bottom: 3px solid #7d5a5a;
+  border-right: 4px solid #7d5a5a;
 }
 h1 {
-  font-size: 6rem;
+  font-size: 10rem;
   text-align: center;
   color: #13a591;
-  font-weight: bold;
+  font-family: 'Oxygen', sans-serif;
+  padding: 5%;
 }
 .navBar {
   margin: 20px;
-  background-color: #f1d1d1;
 }
 .navBar nav {
   display: flex;
   justify-content: space-around;
 }
-.navBar nav a {
+.navBar nav .navBtn {
   color: #7d5a5a;
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 2rem;
   margin: 10px;
 }
-.aboutSection {
-  display: flex;
-  justify-content: center;
+.navBtn:hover {
+  opacity: 50%;
+  transition: all 1s;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 10px;
 }
-.aboutSection p {
+footer {
+  padding: 10%;
+}
+footer .appLogo {
+  max-width: 200px;
+}
+footer .footNav {
+  display: flex;
+  justify-content: space-around;
+}
+footer .footNav a {
+  text-decoration: none;
+  margin-top: 30px;
+  color: #7d5a5a;
+  font-size: 2rem;
+}
+.footNav a:hover {
+  opacity: 50%;
+}
+.aboutSection {
+  position: relative;
+  padding: 2%;
+}
+.aboutSection h2 {
   line-height: 1;
   color: #7d5a5a;
-  padding-top: 60px;
-  margin-right: 10px;
-  font-size: 1.3rem;
-  font-weight: bold;
+  margin: 5%;
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'Oxygen', sans-serif;
+}
+.aboutSection p {
+  font-size: 2rem;
+  text-align: center;
+  color: #7d5a5a;
+  margin: 5%;
+  font-family: 'Oxygen', sans-serif;
 }
 .donate {
   margin: 20px;
   display: flex;
   justify-content: space-evenly;
   flex-direction: row-reverse;
+  padding: 2%;
 }
 .donate .foodImg {
   max-width: 50%;
-  border-radius: 10px;
+  border-radius: 30px;
   opacity: 90%;
 }
 .donate .button {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 180px;
   padding: 10px;
-  color: #7d5a5a;
+  color: #13a591;
   margin-top: 180px;
   font-weight: bold;
+  font-family: 'Oxygen', sans-serif;
 }
-.appLogo {
-  max-width: 200px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.button:hover {
+  opacity: 50%;
+  color: black;
+}
+.foodFacts {
+  text-align: start;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 2%;
+}
+.foodFacts .list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.foodFacts .list .listP {
+  text-align: center;
+  padding: 10px;
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 2;
+  font-family: 'Oxygen', sans-serif;
+}
+.foodFacts .list .listP .links {
+  font-style: normal;
+  font-size: 3rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: #13a591;
+  position: relative;
+  box-sizing: border-box;
+}
+.links:hover {
+  opacity: 50%;
 }
