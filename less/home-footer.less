@@ -19,3 +19,18 @@ footer {
    .footNav a:hover{
         opacity: @hover;
     }
+
+    @media @mobile {
+        footer {
+            .appLogo {
+                max-width: 150px;
+            }
+            .footNav {
+                display: inline;
+               justify-content: start;
+               a{
+                   text-decoration: underline;
+               }
+            }
+        }
+    }
