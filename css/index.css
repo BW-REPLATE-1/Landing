@@ -144,9 +144,11 @@ body {
 }
 @media (max-width: 500px) {
   .fullBody {
+    max-width: 400px;
+    margin: auto;
+    position: relative;
+    border: none;
     border-radius: 0;
-    border: 0;
-    width: 100%;
   }
 }
 h1 {
@@ -186,8 +188,6 @@ h1 {
     font-size: 5rem;
     border: none;
     cursor: pointer;
-    margin-left: 50%;
-    margin-right: 50%;
     display: inline-block;
   }
   .navBar {
@@ -199,18 +199,13 @@ h1 {
     position: absolute;
     background-color: #f9f9f9;
     width: 100%;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    margin-left: 50%;
-    margin-right: 50%;
   }
   .downBar a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    margin-left: 50%;
-    margin-right: 50%;
   }
   #active:hover {
     color: #13a591;
@@ -249,6 +244,18 @@ footer .footNav a {
 }
 .footNav a:hover {
   opacity: 50%;
+}
+@media (max-width: 500px) {
+  footer .appLogo {
+    max-width: 150px;
+  }
+  footer .footNav {
+    display: inline;
+    justify-content: start;
+  }
+  footer .footNav a {
+    text-decoration: underline;
+  }
 }
 .aboutSection {
   position: relative;
@@ -293,6 +300,10 @@ footer .footNav a {
   font-weight: bold;
   font-family: 'Oxygen', sans-serif;
 }
+.button:hover {
+  opacity: 50%;
+  color: black;
+}
 @media (max-width: 500px) {
   .donate {
     flex-direction: column;
@@ -315,10 +326,6 @@ footer .footNav a {
     box-shadow: 0 9px #999;
   }
 }
-.button:hover {
-  opacity: 50%;
-  color: black;
-}
 .foodFacts {
   text-align: start;
   margin-left: 100px;
@@ -334,9 +341,10 @@ footer .footNav a {
   text-align: center;
   padding: 10px;
   font-style: italic;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 2;
   font-family: 'Oxygen', sans-serif;
+  color: #7d5a5a;
 }
 .foodFacts .list .listP .links {
   font-style: normal;
@@ -346,6 +354,17 @@ footer .footNav a {
   color: #13a591;
   position: relative;
   box-sizing: border-box;
+}
+@media (max-width: 500px) {
+  .foodFacts .list {
+    flex-direction: column;
+  }
+  .foodFacts .list .listP {
+    padding: 0;
+  }
+  .foodFacts .list .listP .links {
+    padding: 10px;
+  }
 }
 .links:hover {
   opacity: 50%;

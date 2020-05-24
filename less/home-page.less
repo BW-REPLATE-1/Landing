@@ -9,7 +9,7 @@
         text-align: center;
         font-family: @fontStlye;
     }
-    p {
+        p {
         font-size: @fontSize;
         text-align: center;
         color: @fontColor;
@@ -24,28 +24,34 @@
     .flexBox(space-evenly);
     flex-direction: row-reverse;
     padding:2%;
-    .foodImg {
+        .foodImg {
         max-width: 50%;
         border-radius: 30px;
         opacity: 90%; }
-    .button {
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 3rem;
-        margin-bottom: 180px;
-        padding: 10px;
-        color: @boldColor;
-        margin-top: 180px;
-        font-weight: bold;
-        font-family: @fontStlye;
+            .button {
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 3rem;
+            margin-bottom: 180px;
+            padding: 10px;
+            color: @boldColor;
+            margin-top: 180px;
+            font-weight: bold;
+            font-family: @fontStlye;
     }
 } 
+
+.button:hover{
+    opacity: 50%;
+    color:black;
+}
+
 @media @mobile {
     .donate {
    flex-direction: column;
         .foodImg {
-       max-width: 100%;}
+            max-width: 100%;}
             .button{
                 margin-top: 15px;
                 margin-bottom: 15px;
@@ -53,18 +59,14 @@
                 font-size: 24px;
                 text-align: center;
                 cursor: pointer;
-                outline: none;
-                color: @fontColor;
-                background-color: @boldColor;
-                border: none;
-                border-radius: 15px;
-                box-shadow: 0 9px #999;
+                    outline: none;
+                    color: @fontColor;
+                    background-color: @boldColor;
+                    border: none;
+                    border-radius: 15px;
+                    box-shadow: 0 9px #999;
             }
     }
-}
-.button:hover{
-    opacity: 50%;
-    color:black;
 }
 
 
@@ -80,9 +82,10 @@
             text-align: center;
             padding:10px;
             font-style: italic;
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             line-height: 2;
             font-family: @fontStlye;
+            color:@fontColor;
             .links {
                 font-style: normal;
                 font-size: 3rem;
@@ -93,6 +96,20 @@
                 box-sizing: border-box;
             }
         }   
+    }
+}
+
+@media @mobile {
+    .foodFacts {
+        .list {
+            flex-direction: column;
+            .listP{
+                padding: 0;
+                .links {
+                    padding: 10px;
+                }
+            }
+        }
     }
 }
 
