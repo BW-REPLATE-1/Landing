@@ -369,3 +369,6 @@ footer .footNav a {
 .links:hover {
   opacity: 50%;
 }
+h2 {
+  font-size: 16rem;
+}
