@@ -7,19 +7,34 @@ body {
     width: 100%;
     margin:  auto;
     background-color: @bodyColor;
-    position:relative;
+    position: relative;
     border-radius: 40px;
-    border-bottom: 3px solid @fontColor;
-    border-right: 4px solid @fontColor; 
+    border-bottom: 5px solid @fontColor;
+    border-right: 4px solid @fontColor;
+    margin-bottom: 20px;
 }
 
 @media @mobile {
     .fullBody {
-max-width: 400px;
-// width: 100%;
-margin:auto;
-position: relative;
-border: none;
-border-radius: 0;
+        max-width: 400px;
+        margin:auto;
+        position: relative;
+        border: none;
+        border-radius: 0;
+    }
+}
+
+.aboutBody {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    background-color: @bodyColor ;
+}
+
+@media @mobile {
+    .aboutBody {
+        max-width: 400px;
+        margin:auto;
+        position: relative;
     }
 }

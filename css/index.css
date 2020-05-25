@@ -139,8 +139,9 @@ body {
   background-color: #f1d1d1;
   position: relative;
   border-radius: 40px;
-  border-bottom: 3px solid #7d5a5a;
+  border-bottom: 5px solid #7d5a5a;
   border-right: 4px solid #7d5a5a;
+  margin-bottom: 20px;
 }
 @media (max-width: 500px) {
   .fullBody {
@@ -149,6 +150,19 @@ body {
     position: relative;
     border: none;
     border-radius: 0;
+  }
+}
+.aboutBody {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  background-color: #f1d1d1;
+}
+@media (max-width: 500px) {
+  .aboutBody {
+    max-width: 400px;
+    margin: auto;
+    position: relative;
   }
 }
 h1 {
@@ -369,6 +383,33 @@ footer .footNav a {
 .links:hover {
   opacity: 50%;
 }
-h2 {
-  font-size: 16rem;
+.aboutPage h2 {
+  text-align: center;
+  font-size: 5rem;
+  margin: 2%;
+  color: #7d5a5a;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: bold;
+}
+.aboutPage .imgList {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.aboutPage .imgList .aboutImg {
+  padding: 0 20px 20px;
+}
+.aboutPage .imgList .aboutImg img {
+  width: 300px;
+  border-radius: 10px;
+}
+.aboutPage .imgList .aboutImg p.names {
+  font-size: 3rem;
+  text-align: center;
+  color: #13a591;
+  font-family: 'Oxygen', sans-serif;
+}
+.aboutImg img:hover {
+  opacity: 30%;
 }
