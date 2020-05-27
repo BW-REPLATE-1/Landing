@@ -3,8 +3,39 @@ body {
 }
 
 .fullBody{
-    max-width: 1295px;      
+    max-width: 1200px;      
     width: 100%;
-    margin: 0 auto;
-    background-color: #f1d1d1;
+    margin:  auto;
+    background-color: @bodyColor;
+    position: relative;
+    border-radius: 40px;
+    border-bottom: 5px solid @fontColor;
+    border-right: 4px solid @fontColor;
+    margin-bottom: 20px;
+}
+
+@media @mobile {
+    .fullBody {
+        max-width: 400px;
+        margin:auto;
+        position: relative;
+        border: none;
+        border-radius: 0;
+    }
+}
+
+.aboutBody {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    background-color: @bodyColor ;
+    margin-bottom: 20px;
+}
+
+@media @mobile {
+    .aboutBody {
+        max-width: 400px;
+        margin:auto;
+        position: relative;
+    }
 }

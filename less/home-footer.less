@@ -1,0 +1,35 @@
+footer {
+    padding:10%;
+    .appLogo {
+        max-width: 200px;
+        }
+        .footNav {
+            display: flex;
+            justify-content: space-around;
+            a {
+                text-decoration: none;
+                margin-top: 30px;
+                color: @fontColor;
+                font-size: @fontSize;
+        }
+    }
+}
+
+.footNav a:hover{
+    opacity: @hover;
+}
+
+    @media @mobile {
+        footer {
+            .appLogo {
+              max-width: 150px;
+            }
+            .footNav {
+                display: inline;
+                justify-content: start;
+               a {
+                   text-decoration: underline;
+               }
+            }
+        }
+    }
