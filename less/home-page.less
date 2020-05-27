@@ -1,73 +1,87 @@
 .aboutSection {
-    position: relative;
-    padding:2%;
+position: relative;
+padding:2%;
     h2{
-        line-height: 1;
-        color: @fontColor;
-        margin: 5%;
-        font-size: @fontSize;
-        text-align: center;
-        font-family: @fontStlye;
-    }
+    line-height: 1;
+    color: @fontColor;
+    margin: 5%;
+    font-size: @fontSize;
+    text-align: center;
+    font-family: @fontStlye;};
         p {
         font-size: @fontSize;
         text-align: center;
         color: @fontColor;
         margin: 5%;
         font-family: @fontStlye;
-    }
-}
+    };
+};
 
 
 .donate {
-    margin: 20px;
     .flexBox(space-evenly);
     flex-direction: row-reverse;
     padding:2%;
         .foodImg {
-        max-width: 50%;
+        max-height:350px;
+        max-width: auto;
         border-radius: 30px;
-        opacity: 90%; }
+        opacity: 90%; };
             .button {
             text-align: center;
             text-decoration: none;
             display: inline-block;
             font-size: 3rem;
-            margin-bottom: 180px;
+            margin-bottom: 150px;
             padding: 10px;
             color: @boldColor;
-            margin-top: 180px;
+            margin-top: 150px;
             font-weight: bold;
             font-family: @fontStlye;
-    }
-} 
+    };
+};
 
 .button:hover{
-    opacity: 50%;
-    color:black;
-}
+opacity: 50%;
+color:black;
+};
+
+@media @iMobile {
+.donate {
+    justify-content: center;
+    .foodImg {
+    max-height: 250px;
+    max-width: auto;
+        };
+        .button {
+        margin-top:70px;
+        };
+    };
+};
+
 
 @media @mobile {
     .donate {
-   flex-direction: column;
+    flex-direction: column;
         .foodImg {
-            max-width: 100%;}
+        max-width: 100%;
+        };
             .button{
-                margin-top: 15px;
-                margin-bottom: 15px;
-                padding: 15px 25px;
-                font-size: 24px;
-                text-align: center;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding: 15px 25px;
+            font-size: 24px;
+            text-align: center;
                 cursor: pointer;
-                    outline: none;
-                    color: @fontColor;
-                    background-color: @boldColor;
-                    border: none;
-                    border-radius: 15px;
-                    box-shadow: 0 9px #999;
-            }
-    }
-}
+                outline: none;
+                color: @fontColor;
+                background-color: @boldColor;
+                border: none;
+                border-radius: 15px;
+                box-shadow: 0 9px #999;
+        };
+    };
+};
 
 
 .foodFacts{
@@ -76,28 +90,28 @@
     margin-right:100px;
     padding:2%;
     .list {
-        .flexBox(space-evenly);
-        align-items: center;
+    .flexBox(space-evenly);
+    align-items: center;
         .listP {
-            text-align: center;
-            padding:10px;
-            font-style: italic;
-            font-size: 1.6rem;
-            line-height: 2;
-            font-family: @fontStlye;
-            color:@fontColor;
+        text-align: center;
+        padding:10px;
+        font-style: italic;
+        font-size: 1.6rem;
+        line-height: 2;
+        font-family: @fontStlye;
+        color:@fontColor;
             .links {
-                font-style: normal;
-                font-size: 3rem;
-                text-decoration: none;
-                font-weight: bold;
-                color: @boldColor;
-                position: relative;
-                box-sizing: border-box;
-            }
-        }   
-    }
-}
+            font-style: normal;
+            font-size: 3rem;
+            text-decoration: none;
+            font-weight: bold;
+            color: @boldColor;
+            position: relative;
+            box-sizing: border-box;
+            };
+        };  
+    };
+};
 
 @media @mobile {
     .foodFacts {
@@ -107,12 +121,12 @@
                 padding: 0;
                 .links {
                     padding: 10px;
-                }
-            }
-        }
-    }
-}
+                };
+            };
+        };
+    };
+};
 
 .links:hover{
     opacity: @hover;
-}
+};

@@ -1,24 +1,28 @@
+#active {
+  margin: 5%;
+};
 
 .navBar {
-    margin: 20px;
+  margin: 20px;
     nav {
     .flexBox(space-around);
       .navBtn {
-        color:@fontColor;
-        text-decoration: none;
-        font-size: @fontSize;
-        margin: 10px;
-        }
-    }
-}
+      color:@fontColor;
+      text-decoration: none;
+      font-size: @fontSize;
+      margin: 10px;
+    };
+  };
+};
 
 @media @mobile {
 
 .navBar {
   nav {
      display: none;
-    }
-}
+    };
+};
+
     #active {
         padding: 16px;
         border: white 3px solid;
@@ -27,12 +31,12 @@
         cursor: pointer;
         display: inline-block;
         width:200px;
-      }
+      };
       
       .navBar {
         position: relative;
         display: inline-block;
-      }
+      };
       
       .downBar {
         display: none;
@@ -40,26 +44,26 @@
         background-color: #f9f9f9;
         width:100%;
         z-index: 1;
-      }
+      };
       
       .downBar a {
         color: black;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
-      }
+      };
 
       #active:hover {
           color: @boldColor;
-      }
+      };
       
-      .downBar a:hover {background-color: @boldColor}
+      .downBar a:hover {background-color: @boldColor};
       
       .navBar:hover .downBar {
         display: block;
-      }
+      };
       
-    }
+    };
 
 .navBtn:hover {
         opacity: @hover;
@@ -69,5 +73,5 @@
         padding-left: 5px;
         padding-right: 5px;
         border-radius: 10px;
-    }
+    };
 

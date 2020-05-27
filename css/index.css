@@ -134,7 +134,7 @@ body {
 }
 .fullBody {
   max-width: 1200px;
-  width: 100%;
+  width: 95%;
   margin: auto;
   background-color: #f1d1d1;
   position: relative;
@@ -165,6 +165,9 @@ body {
     margin: auto;
     position: relative;
   }
+}
+#active {
+  margin: 5%;
 }
 .navBar {
   margin: 20px;
@@ -271,6 +274,36 @@ footer .footNav a {
     text-decoration: underline;
   }
 }
+.aboutPage h2 {
+  text-align: center;
+  font-size: 5rem;
+  margin: 2%;
+  color: #7d5a5a;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: bold;
+}
+.aboutPage .imgList {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.aboutPage .imgList .aboutImg {
+  padding: 0 20px 20px;
+}
+.aboutPage .imgList .aboutImg img {
+  width: 300px;
+  border-radius: 10px;
+}
+.aboutPage .imgList .aboutImg p.names {
+  font-size: 3rem;
+  text-align: center;
+  color: #13a591;
+  font-family: 'Oxygen', sans-serif;
+}
+.aboutImg img:hover {
+  opacity: 30%;
+}
 .aboutSection {
   position: relative;
   padding: 2%;
@@ -291,14 +324,14 @@ footer .footNav a {
   font-family: 'Oxygen', sans-serif;
 }
 .donate {
-  margin: 20px;
   display: flex;
   justify-content: space-evenly;
   flex-direction: row-reverse;
   padding: 2%;
 }
 .donate .foodImg {
-  max-width: 50%;
+  max-height: 350px;
+  max-width: auto;
   border-radius: 30px;
   opacity: 90%;
 }
@@ -307,16 +340,28 @@ footer .footNav a {
   text-decoration: none;
   display: inline-block;
   font-size: 3rem;
-  margin-bottom: 180px;
+  margin-bottom: 150px;
   padding: 10px;
   color: #13a591;
-  margin-top: 180px;
+  margin-top: 150px;
   font-weight: bold;
   font-family: 'Oxygen', sans-serif;
 }
 .button:hover {
   opacity: 50%;
   color: black;
+}
+@media (max-width: 900px) {
+  .donate {
+    justify-content: center;
+  }
+  .donate .foodImg {
+    max-height: 250px;
+    max-width: auto;
+  }
+  .donate .button {
+    margin-top: 70px;
+  }
 }
 @media (max-width: 500px) {
   .donate {
@@ -382,34 +427,4 @@ footer .footNav a {
 }
 .links:hover {
   opacity: 50%;
-}
-.aboutPage h2 {
-  text-align: center;
-  font-size: 5rem;
-  margin: 2%;
-  color: #7d5a5a;
-  font-family: 'Oxygen', sans-serif;
-  font-weight: bold;
-}
-.aboutPage .imgList {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-}
-.aboutPage .imgList .aboutImg {
-  padding: 0 20px 20px;
-}
-.aboutPage .imgList .aboutImg img {
-  width: 300px;
-  border-radius: 10px;
-}
-.aboutPage .imgList .aboutImg p.names {
-  font-size: 3rem;
-  text-align: center;
-  color: #13a591;
-  font-family: 'Oxygen', sans-serif;
-}
-.aboutImg img:hover {
-  opacity: 30%;
 }
