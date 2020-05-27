@@ -347,6 +347,16 @@ footer .footNav a {
   font-weight: bold;
   font-family: 'Oxygen', sans-serif;
 }
+.arrow {
+  border: double slategray;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 4px;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
 .button:hover {
   opacity: 50%;
   color: black;
