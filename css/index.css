@@ -316,14 +316,16 @@ footer .footNav a {
   background-color: #faf2f2;
   margin: 50px;
   opacity: 80%;
+  border-radius: 50px;
 }
 .aboutSection h2 {
   line-height: 1;
   color: #7d5a5a;
   margin: 5%;
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
   font-family: 'Oxygen', sans-serif;
+  font-weight: bold;
 }
 .aboutSection p {
   font-size: 2rem;
