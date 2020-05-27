@@ -143,6 +143,12 @@ body {
   border-right: 4px solid #7d5a5a;
   margin-bottom: 20px;
 }
+@media (max-width: 900px) {
+  .fullBody {
+    border: none;
+    border-radius: 0px;
+  }
+}
 @media (max-width: 500px) {
   .fullBody {
     max-width: 400px;
@@ -307,12 +313,15 @@ footer .footNav a {
 .aboutSection {
   position: relative;
   padding: 2%;
+  background-color: #faf2f2;
+  margin: 50px;
+  opacity: 80%;
 }
 .aboutSection h2 {
   line-height: 1;
   color: #7d5a5a;
   margin: 5%;
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
   font-family: 'Oxygen', sans-serif;
 }
