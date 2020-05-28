@@ -48,13 +48,17 @@ border-top-right-radius: 50px;
             text-decoration: none;
             display: inline-block;
             font-size: 3rem;
-            margin-bottom: 150px;
             padding: 10px;
             color: @boldColor;
-            margin-top: 150px;
             font-weight: bold;
             font-family: @fontStlye;
+            .myButton(150px,150px);
     };
+};
+
+.button:hover{
+    opacity: @hover;
+    color:black;
 };
 
 .arrow {
@@ -62,18 +66,12 @@ border-top-right-radius: 50px;
     border-width: 0 5px 5px 0;
     display: inline-block;
     padding: 4px;
-  }
+};
   
   .right {
     transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-  }
-  
-
-.button:hover{
-opacity: @hover;
-color:black;
 };
+  
 
 @media @iMobile {
 .donate {
@@ -96,10 +94,9 @@ color:black;
         max-width: 100%;
         };
             .button{
-            margin-top: 15px;
-            margin-bottom: 15px;
+            .myButton(15px,15px);
             padding: 15px 25px;
-            font-size: 24px;
+            font-size: @fontSize;
             text-align: center;
                 cursor: pointer;
                 outline: none;

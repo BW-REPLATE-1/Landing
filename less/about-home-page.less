@@ -2,12 +2,12 @@
     margin-top:5%;
     .aboutText {
         font-size: 2rem;
+        margin:5%;
+        padding:2%;
         color:@fontColor;
         font-family:@fontStlye;
         text-align: center;
-        margin:5%;
         position: relative;
-        padding:2%;
         background-color: @lightBodyColor;
         opacity: 80%;};
        .imgList {
@@ -32,3 +32,9 @@
 .aboutImg img:hover{
     opacity: 30%;
 }
+
+@media @mobile {
+    .me {
+        transform: rotate(90deg);
+    };
+};

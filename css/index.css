@@ -212,7 +212,7 @@ body {
   .downBar {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #faf2f2;
     width: 100%;
     z-index: 1;
   }
@@ -296,12 +296,12 @@ footer .footNav a {
 }
 .aboutPage .aboutText {
   font-size: 2rem;
+  margin: 5%;
+  padding: 2%;
   color: #7d5a5a;
   font-family: 'Oxygen', sans-serif;
   text-align: center;
-  margin: 5%;
   position: relative;
-  padding: 2%;
   background-color: #faf2f2;
   opacity: 80%;
 }
@@ -326,6 +326,11 @@ footer .footNav a {
 }
 .aboutImg img:hover {
   opacity: 30%;
+}
+@media (max-width: 500px) {
+  .me {
+    transform: rotate(90deg);
+  }
 }
 .aboutSection {
   position: relative;
@@ -378,12 +383,16 @@ footer .footNav a {
   text-decoration: none;
   display: inline-block;
   font-size: 3rem;
-  margin-bottom: 150px;
   padding: 10px;
   color: #13a591;
-  margin-top: 150px;
   font-weight: bold;
   font-family: 'Oxygen', sans-serif;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.button:hover {
+  opacity: 50%;
+  color: black;
 }
 .arrow {
   border: double slategray;
@@ -393,11 +402,6 @@ footer .footNav a {
 }
 .right {
   transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-.button:hover {
-  opacity: 50%;
-  color: black;
 }
 @media (max-width: 900px) {
   .donate {
@@ -422,7 +426,7 @@ footer .footNav a {
     margin-top: 15px;
     margin-bottom: 15px;
     padding: 15px 25px;
-    font-size: 24px;
+    font-size: 2rem;
     text-align: center;
     cursor: pointer;
     outline: none;
