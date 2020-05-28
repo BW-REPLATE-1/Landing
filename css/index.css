@@ -309,7 +309,6 @@ footer .footNav a {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  flex-direction: row;
 }
 .aboutPage .imgList .aboutImg {
   padding: 0 20px 20px;
