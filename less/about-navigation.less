@@ -8,8 +8,27 @@ h1 {
 
 @media @mobile {
     h1 {
+        border-bottom: 4px solid @lightBodyColor;
+        border-left: 4px solid @lightBodyColor;
         font-size: 4rem;
-        background-color: @lightBodyColor;
         border-radius: 50px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 3rem;
+        padding: 20px;
+        background-color: @boldColor;
+        color:@lightBodyColor;
+        font-weight: bold;
+        font-family: @fontStlye;
+    }
+}
+
+
+
+@media @mobile {
+    .navBar {
+        border:0;
+        opacity: 100%;
     }
 }

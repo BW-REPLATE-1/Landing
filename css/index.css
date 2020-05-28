@@ -177,6 +177,7 @@ body {
 }
 .navBar {
   margin: 20px;
+  border-bottom: 2px solid #7d5a5a;
 }
 .navBar nav {
   display: flex;
@@ -189,6 +190,9 @@ body {
   margin: 10px;
 }
 @media (max-width: 500px) {
+  .navBar {
+    border: 0;
+  }
   .navBar nav {
     display: none;
   }
@@ -246,9 +250,25 @@ h1 {
 }
 @media (max-width: 500px) {
   h1 {
+    border-bottom: 4px solid #faf2f2;
+    border-left: 4px solid #faf2f2;
     font-size: 4rem;
-    background-color: #faf2f2;
     border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3rem;
+    padding: 20px;
+    background-color: #13a591;
+    color: #faf2f2;
+    font-weight: bold;
+    font-family: 'Oxygen', sans-serif;
+  }
+}
+@media (max-width: 500px) {
+  .navBar {
+    border: 0;
+    opacity: 100%;
   }
 }
 footer {
@@ -285,16 +305,20 @@ footer .footNav a {
 .aboutPage {
   margin-top: 5%;
 }
-.aboutPage h2 {
-  text-align: center;
-  font-size: 5rem;
+.aboutPage .aboutText {
+  font-size: 2rem;
   color: #7d5a5a;
   font-family: 'Oxygen', sans-serif;
-  font-weight: bold;
+  text-align: center;
+  margin: 5%;
+  position: relative;
+  padding: 2%;
+  background-color: #faf2f2;
+  opacity: 80%;
 }
 .aboutPage .imgList {
-  justify-content: center;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
 }
@@ -338,6 +362,15 @@ footer .footNav a {
   color: #7d5a5a;
   margin: 5%;
   font-family: 'Oxygen', sans-serif;
+}
+@media (max-width: 500px) {
+  .aboutSection {
+    border-radius: 0px;
+    margin: 0;
+  }
+  .aboutSection h2 {
+    font-size: 3rem;
+  }
 }
 .donate {
   display: flex;
@@ -446,9 +479,11 @@ footer .footNav a {
   }
   .foodFacts .list .listP {
     padding: 0;
+    font-size: 1.3rem;
   }
   .foodFacts .list .listP .links {
     padding: 10px;
+    font-size: 2.5rem;
   }
 }
 .links:hover {
