@@ -1,5 +1,5 @@
 body {
-    background: #faf2f2;
+    background: @lightBodyColor;
 };
 
 .fullBody{
@@ -35,7 +35,7 @@ body {
     width: 100%;
     margin: auto;
     background-color: @bodyColor ;
-    margin-bottom: 20px;
+    border: 5px solid @fontColor;
 };
 
 @media @mobile {
@@ -43,5 +43,6 @@ body {
         max-width: 400px;
         margin:auto;
         position: relative;
-    };
+        border:none;
+   };
 };

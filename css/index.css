@@ -162,13 +162,14 @@ body {
   width: 100%;
   margin: auto;
   background-color: #f1d1d1;
-  margin-bottom: 20px;
+  border: 5px solid #7d5a5a;
 }
 @media (max-width: 500px) {
   .aboutBody {
     max-width: 400px;
     margin: auto;
     position: relative;
+    border: none;
   }
 }
 #active {
