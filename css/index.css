@@ -138,10 +138,9 @@ body {
   margin: auto;
   background-color: #f1d1d1;
   position: relative;
-  border-radius: 40px;
-  border-bottom: 5px solid #7d5a5a;
-  border-right: 4px solid #7d5a5a;
+  border: 5px solid #7d5a5a;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 @media (max-width: 900px) {
   .fullBody {
